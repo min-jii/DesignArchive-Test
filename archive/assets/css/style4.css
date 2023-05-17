@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  cursor: crosshair;
+}
+
+body {
+  margin-top: 1vw;
+  margin-left: 4.5vw;
+  margin-right: 4.5vw;
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  word-break: keep-all;
+  background-color: black;
+
+  -ms-overflow-style: none;
+  }
+ 
+  ::-webkit-scrollbar {
+    display: none;   
+}

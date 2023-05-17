@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  cursor: crosshair;
+}
+
+body {
+  margin-left: 6.5vw;
+  margin-right: 6.5vw;
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  word-break: keep-all;
+  background-color: black;
+
+  -ms-overflow-style: none;
+  }
+ 
+  ::-webkit-scrollbar {
+    display: none;   
+}
+
+.cards {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 1.4vw 1.9vw;
+  padding: 0vh 2.5vw;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw 1.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: .9vw 1.2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.6vw 0.9vw;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a:hover {
+  cursor: help;
+}
